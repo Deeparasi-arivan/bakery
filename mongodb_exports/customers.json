@@ -1,0 +1,51 @@
+[
+  {
+    "_id": "6acda62c4c3b5f1e621c2e57",
+    "phone": "9876500001",
+    "name": "Priya Ramesh",
+    "email": "priya@gmail.com",
+    "role": "customer",
+    "isVerified": true,
+    "createdAt": "2026-10-13T03:31:56.676Z",
+    "updatedAt": "2026-10-28T03:04:20.680Z",
+    "__v": 0,
+    "defaultAddress": "6ae1663416779c33a8fa6b93"
+  },
+  {
+    "_id": "6acda62c4c3b5f1e621c2e59",
+    "phone": "9876500002",
+    "name": "Rahul Verma",
+    "email": "rahul@gmail.com",
+    "role": "customer",
+    "isVerified": true,
+    "createdAt": "2026-10-13T03:31:56.679Z",
+    "updatedAt": "2026-10-13T03:31:56.687Z",
+    "__v": 0,
+    "defaultAddress": "6acda62c4c3b5f1e621c2e5e"
+  },
+  {
+    "_id": "6aeaa2c54f7afa6e232f5dec",
+    "phone": "9876543299",
+    "name": "Diya Test",
+    "email": "diya.test@example.com",
+    "password": "$2a$10$n7a5CXuS.Auz2JxND1vB/.dAomXtrtci/dyz4bIzzwQNjq14jB6hu",
+    "role": "customer",
+    "isVerified": true,
+    "createdAt": "2026-11-04T03:13:09.404Z",
+    "updatedAt": "2026-11-04T03:13:09.404Z",
+    "__v": 0
+  },
+  {
+    "_id": "6aebefe4669b8b4c3d433714",
+    "phone": "9042487448",
+    "name": "deepa sri",
+    "email": "deepa.deeparasi17@gmail.com",
+    "password": "$2a$10$t/y6KBol1geAe1eZq/7fge2ptXP/H.HcUnBG2bB27wtw7X4INd5VC",
+    "role": "customer",
+    "isVerified": true,
+    "createdAt": "2026-11-05T02:54:28.782Z",
+    "updatedAt": "2026-11-05T02:57:51.992Z",
+    "__v": 0,
+    "defaultAddress": "6aebf0af669b8b4c3d43374b"
+  }
+]

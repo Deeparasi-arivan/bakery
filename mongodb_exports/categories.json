@@ -1,0 +1,93 @@
+[
+  {
+    "_id": "6acda62c4c3b5f1e621c2e38",
+    "name": "Cake",
+    "slug": "cake",
+    "description": "Freshly baked artisanal cakes for everyday moments",
+    "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&auto=format&fit=crop&q=80",
+    "icon": "bi-cake2",
+    "isActive": true,
+    "displayOrder": 1,
+    "createdAt": "2026-10-13T03:31:56.642Z",
+    "updatedAt": "2026-10-13T03:31:56.642Z",
+    "__v": 0
+  },
+  {
+    "_id": "6acda62c4c3b5f1e621c2e3a",
+    "name": "Birthday Cake",
+    "slug": "birthday-cake",
+    "description": "Custom celebratory tiered birthday cakes with candles and ribbons",
+    "image": "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=600&auto=format&fit=crop&q=80",
+    "icon": "bi-balloon-heart",
+    "isActive": true,
+    "displayOrder": 2,
+    "createdAt": "2026-10-13T03:31:56.644Z",
+    "updatedAt": "2026-10-13T03:31:56.644Z",
+    "__v": 0
+  },
+  {
+    "_id": "6acda62c4c3b5f1e621c2e3c",
+    "name": "Chocolate Cake",
+    "slug": "chocolate-cake",
+    "description": "Decadent dark and Belgian chocolate fudge gourmet delights",
+    "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&auto=format&fit=crop&q=80",
+    "icon": "bi-cup-hot",
+    "isActive": true,
+    "displayOrder": 3,
+    "createdAt": "2026-10-13T03:31:56.648Z",
+    "updatedAt": "2026-10-13T03:31:56.648Z",
+    "__v": 0
+  },
+  {
+    "_id": "6acda62c4c3b5f1e621c2e3f",
+    "name": "Black Forest Cake",
+    "slug": "black-forest-cake",
+    "description": "Classic German kirsch-infused chocolate layers with cherries and cream",
+    "image": "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=600&auto=format&fit=crop&q=80",
+    "icon": "bi-flower1",
+    "isActive": true,
+    "displayOrder": 4,
+    "createdAt": "2026-10-13T03:31:56.650Z",
+    "updatedAt": "2026-10-13T03:31:56.650Z",
+    "__v": 0
+  },
+  {
+    "_id": "6acda62c4c3b5f1e621c2e41",
+    "name": "Red Velvet Cake",
+    "slug": "red-velvet-cake",
+    "description": "Crimson cocoa sponge layered with silky cream cheese frosting",
+    "image": "https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?w=600&auto=format&fit=crop&q=80",
+    "icon": "bi-heart",
+    "isActive": true,
+    "displayOrder": 5,
+    "createdAt": "2026-10-13T03:31:56.652Z",
+    "updatedAt": "2026-10-13T03:31:56.652Z",
+    "__v": 0
+  },
+  {
+    "_id": "6acda62c4c3b5f1e621c2e43",
+    "name": "Cupcake",
+    "slug": "cupcake",
+    "description": "Single-serve frosted cupcakes in vibrant baker batches",
+    "image": "https://images.unsplash.com/photo-1587668178277-295251f900ce?w=600&auto=format&fit=crop&q=80",
+    "icon": "bi-stars",
+    "isActive": true,
+    "displayOrder": 6,
+    "createdAt": "2026-10-13T03:31:56.654Z",
+    "updatedAt": "2026-10-13T03:31:56.654Z",
+    "__v": 0
+  },
+  {
+    "_id": "6acda62c4c3b5f1e621c2e45",
+    "name": "Donut",
+    "slug": "donut",
+    "description": "Glazed, frosted, and sprinkle-topped ring donuts freshly fried daily",
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&auto=format&fit=crop&q=80",
+    "icon": "bi-circle",
+    "isActive": true,
+    "displayOrder": 7,
+    "createdAt": "2026-10-13T03:31:56.656Z",
+    "updatedAt": "2026-10-13T03:31:56.656Z",
+    "__v": 0
+  }
+]

@@ -1,0 +1,250 @@
+/* ==========================================================================
+   SweetHome Bakery – Navbar CSS
+   ========================================================================== */
+
+/* Top Info Bar */
+.bg-bakery-dark {
+  background-color: var(--bg-primary) !important;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary) !important;
+}
+
+/* Main Navbar */
+.navbar {
+  background-color: rgba(23, 21, 19, 0.94) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color) !important;
+  transition: all 0.3s ease;
+  z-index: 1030;
+}
+
+.navbar.sticky-top {
+  position: sticky;
+  top: 0;
+}
+
+/* Brand Logo */
+.navbar-brand {
+  color: var(--gold) !important;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: transform 0.25s ease;
+}
+
+.navbar-brand:hover {
+  transform: translateY(-1px);
+}
+
+.brand-icon-wrapper {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--gold) !important;
+  box-shadow: 0 0 14px rgba(233, 185, 110, 0.2);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover .brand-icon-wrapper {
+  border-color: var(--gold-hover) !important;
+  box-shadow: var(--gold-glow);
+}
+
+.navbar-brand span {
+  color: var(--gold) !important;
+}
+
+.navbar-brand small {
+  color: var(--text-secondary) !important;
+  letter-spacing: 2px !important;
+}
+
+/* Navigation Links */
+.nav-links,
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-link {
+  color: var(--cream) !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem !important;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--gold) !important;
+}
+
+/* Gold Underline Indicator for Active/Hover State */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 1rem;
+  right: 1rem;
+  height: 2px;
+  background-color: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+  transform-origin: center;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
+}
+
+.nav-link.active {
+  color: var(--gold) !important;
+  font-weight: 600;
+}
+
+/* Search Bar in Navbar */
+.navbar form .input-group {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.navbar form .input-group:focus-within {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(233, 185, 110, 0.2);
+}
+
+.navbar form input.form-control {
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--cream) !important;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.navbar form input.form-control::placeholder {
+  color: var(--text-secondary) !important;
+}
+
+.navbar form button.btn {
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--gold) !important;
+  padding-right: 1.25rem;
+  transition: transform 0.2s ease;
+}
+
+.navbar form button.btn:hover {
+  transform: scale(1.1);
+  color: var(--gold-hover) !important;
+}
+
+/* Cart Icon Button */
+.cart-icon,
+.navbar .btn-outline-bakery {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--gold) !important;
+  transition: all 0.25s ease;
+}
+
+.cart-icon:hover,
+.navbar .btn-outline-bakery:hover {
+  background-color: var(--bg-hover) !important;
+  border-color: var(--gold) !important;
+  color: var(--gold-hover) !important;
+  transform: translateY(-1px);
+}
+
+.navbar .badge.bg-danger {
+  background-color: var(--danger) !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(239, 83, 80, 0.5);
+}
+
+/* Login Button */
+.login-btn,
+.navbar .btn-bakery-accent {
+  background-color: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--bg-primary) !important;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.login-btn:hover,
+.navbar .btn-bakery-accent:hover {
+  background-color: var(--gold-hover) !important;
+  border-color: var(--gold-hover) !important;
+  color: var(--bg-primary) !important;
+  box-shadow: var(--gold-glow);
+  transform: translateY(-1px);
+}
+
+/* User Profile Dropdown */
+.navbar .dropdown button {
+  background-color: var(--bg-card) !important;
+  border-color: var(--border-color) !important;
+  color: var(--cream) !important;
+}
+
+.navbar .dropdown button:hover {
+  border-color: var(--gold) !important;
+}
+
+.navbar .dropdown-menu {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+.navbar .dropdown-item {
+  color: var(--cream) !important;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: var(--bg-hover) !important;
+  color: var(--gold) !important;
+}
+
+/* Mobile Hamburger Menu Toggle */
+.menu-toggle,
+.navbar-toggler {
+  border: 1px solid var(--border-color) !important;
+  background-color: var(--bg-card) !important;
+  padding: 0.45rem 0.65rem;
+  border-radius: 8px;
+  color: var(--gold) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23E9B96E' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Mobile Collapse Styling */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.25rem;
+    margin-top: 0.75rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .navbar form {
+    max-width: 100% !important;
+  }
+}

@@ -1,0 +1,936 @@
+/* ==========================================================================
+   SweetHome Bakery – Complete Admin & Owner Management CSS
+   Executive Dark Luxury Theme
+   ========================================================================== */
+
+:root {
+  --bg-primary: #111111;
+  --bg-secondary: #171513;
+  --bg-card: #1C1A18;
+  --bg-hover: #29231E;
+  --chocolate: #5C321E;
+  --gold: #E9B96E;
+  --gold-hover: #F5CC88;
+  --cream: #FFF1D6;
+  --text-secondary: #C8BBAA;
+  --border-color: #39312B;
+  --success: #4CAF50;
+  --danger: #EF5350;
+  --warning: #FFA726;
+  --info: #4FC3F7;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.7);
+  --gold-glow: 0 0 20px rgba(233, 185, 110, 0.22);
+}
+
+/* ==========================================================================
+   1. Admin Layout & Page Wrapper
+   ========================================================================== */
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-primary) !important;
+  color: var(--cream) !important;
+  font-family: var(--font-sans);
+}
+
+.owner-main-content {
+  background-color: var(--bg-primary) !important;
+  min-height: 100vh;
+  transition: margin-left 0.3s ease;
+  min-width: 0;
+}
+
+@media (min-width: 992px) {
+  .owner-main-content {
+    margin-left: 260px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .owner-main-content {
+    margin-left: 0;
+  }
+}
+
+/* ==========================================================================
+   2. Executive Owner Sidebar
+   ========================================================================== */
+
+.admin-sidebar,
+.owner-sidebar {
+  width: 260px;
+  min-height: 100vh;
+  background-color: var(--bg-secondary) !important;
+  border-right: 1px solid var(--border-color) !important;
+  box-shadow: 4px 0 25px rgba(0, 0, 0, 0.45);
+  padding: 1.25rem 1rem !important;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1045;
+  transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
+}
+
+@media (max-width: 991.98px) {
+  .owner-sidebar {
+    transform: translateX(-100%);
+  }
+  .owner-sidebar.show {
+    transform: translateX(0);
+  }
+}
+
+/* Sidebar Brand Header */
+.sidebar-brand-box {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.brand-logo-icon {
+  background: var(--cream);
+  border: 2px solid var(--gold);
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-title,
+.owner-sidebar .brand-title {
+  font-family: var(--font-serif);
+  color: var(--gold) !important;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.brand-subtitle {
+  color: var(--text-secondary) !important;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Sidebar Current Owner Profile Pill */
+.owner-profile-card {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px;
+  transition: border-color 0.25s ease;
+}
+
+.owner-profile-card:hover {
+  border-color: rgba(233, 185, 110, 0.4) !important;
+}
+
+.owner-avatar {
+  background-color: var(--gold) !important;
+  color: var(--bg-primary) !important;
+  width: 36px;
+  height: 36px;
+  font-size: 0.95rem;
+}
+
+.owner-name {
+  color: var(--cream) !important;
+  font-size: 0.85rem;
+}
+
+.owner-email {
+  color: var(--text-secondary) !important;
+  font-size: 0.72rem;
+}
+
+/* Sidebar Nav Links */
+.owner-sidebar .nav {
+  gap: 0.35rem;
+}
+
+.owner-sidebar .nav-link {
+  color: var(--text-secondary) !important;
+  border-radius: 12px !important;
+  font-weight: 500;
+  font-size: 0.92rem;
+  padding: 0.65rem 0.95rem !important;
+  transition: all 0.22s ease-in-out;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.owner-sidebar .nav-link i {
+  color: var(--gold);
+  font-size: 1.15rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.owner-sidebar .nav-link:hover {
+  background-color: var(--bg-hover) !important;
+  color: var(--cream) !important;
+  border-color: rgba(233, 185, 110, 0.25) !important;
+  transform: translateX(4px);
+}
+
+.owner-sidebar .nav-link:hover i {
+  color: var(--gold-hover);
+  transform: scale(1.1);
+}
+
+/* Active Nav Link */
+.owner-sidebar .nav-link.active,
+.owner-sidebar .nav-link.bg-bakery-accent {
+  background: linear-gradient(135deg, var(--chocolate) 0%, #462514 100%) !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--gold) !important;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(233, 185, 110, 0.25);
+  transform: none;
+}
+
+.owner-sidebar .nav-link.active i,
+.owner-sidebar .nav-link.bg-bakery-accent i {
+  color: var(--gold-hover) !important;
+}
+
+/* Sidebar Footer Actions */
+.sidebar-footer-box {
+  border-top: 1px solid var(--border-color) !important;
+}
+
+.btn-view-store {
+  background-color: transparent !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-secondary) !important;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-view-store:hover {
+  background-color: var(--bg-hover) !important;
+  border-color: var(--gold) !important;
+  color: var(--gold) !important;
+  transform: translateY(-1px);
+}
+
+.btn-owner-logout {
+  background-color: rgba(239, 83, 80, 0.12) !important;
+  border: 1px solid rgba(239, 83, 80, 0.3) !important;
+  color: #EF5350 !important;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-owner-logout:hover {
+  background-color: rgba(239, 83, 80, 0.25) !important;
+  border-color: rgba(239, 83, 80, 0.5) !important;
+  color: #FF8A80 !important;
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   3. Admin Top Header Bar
+   ========================================================================== */
+
+.owner-main-content header {
+  background-color: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(8px);
+}
+
+.owner-main-content header h5 {
+  color: var(--gold) !important;
+  font-family: var(--font-serif);
+}
+
+.owner-main-content header small {
+  color: var(--text-secondary) !important;
+}
+
+.owner-main-content header .text-dark {
+  color: var(--cream) !important;
+}
+
+.owner-main-content header .badge.bg-success-subtle {
+  background-color: rgba(76, 175, 80, 0.18) !important;
+  color: #81C784 !important;
+  border: 1px solid rgba(76, 175, 80, 0.4) !important;
+}
+
+.owner-main-content header .rounded-circle.bg-bakery-cream {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--gold) !important;
+}
+
+.owner-main-content header .btn-light {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--gold) !important;
+}
+
+/* ==========================================================================
+   4. Admin Metric KPI Cards & General Cards
+   ========================================================================== */
+
+.dashboard-card,
+.owner-main-content .card {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 16px;
+  color: var(--cream) !important;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.dashboard-card:hover,
+.owner-main-content .card:hover {
+  border-color: rgba(233, 185, 110, 0.4) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Card Header & Content */
+.owner-main-content .card .card-header,
+.owner-main-content .card > div:first-child.bg-light {
+  background-color: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  color: var(--cream) !important;
+}
+
+.owner-main-content .card h1,
+.owner-main-content .card h2,
+.owner-main-content .card h3,
+.owner-main-content .card h4,
+.owner-main-content .card h5,
+.owner-main-content .card h6 {
+  color: var(--cream) !important;
+}
+
+.owner-main-content .card .text-muted {
+  color: var(--text-secondary) !important;
+}
+
+.owner-main-content .text-dark,
+.admin-layout .text-dark,
+.owner-login-card .text-dark {
+  color: var(--cream) !important;
+}
+
+.owner-main-content h1.text-dark,
+.owner-main-content h2.text-dark,
+.owner-main-content h3.text-dark,
+.owner-main-content h4.text-dark,
+.owner-main-content h5.text-dark,
+.owner-main-content h6.text-dark {
+  color: var(--gold) !important;
+  font-family: var(--font-serif);
+}
+
+.badge.bg-warning.text-dark,
+.badge.bg-info.text-dark,
+.btn-warning.text-dark {
+  color: #111111 !important;
+}
+
+/* Card Accent Left Borders */
+.owner-main-content .card.border-start.border-4.border-success,
+.dashboard-card.border-success {
+  border-left: 4px solid var(--success) !important;
+}
+
+.owner-main-content .card.border-start.border-4.border-primary,
+.dashboard-card.border-primary {
+  border-left: 4px solid var(--gold) !important;
+}
+
+.owner-main-content .card.border-start.border-4.border-warning,
+.dashboard-card.border-warning {
+  border-left: 4px solid var(--warning) !important;
+}
+
+.owner-main-content .card.border-start.border-4.border-danger,
+.dashboard-card.border-danger {
+  border-left: 4px solid var(--danger) !important;
+}
+
+.owner-main-content .card.border-start.border-4.border-info,
+.dashboard-card.border-info {
+  border-left: 4px solid var(--info) !important;
+}
+
+.owner-main-content .card.border-start.border-4.border-bakery-accent {
+  border-left: 4px solid var(--gold) !important;
+}
+
+/* Metric Colors */
+.owner-main-content .card .text-success {
+  color: #81C784 !important;
+}
+
+.owner-main-content .card .text-primary {
+  color: var(--gold) !important;
+}
+
+.owner-main-content .card .text-warning {
+  color: var(--warning) !important;
+}
+
+.owner-main-content .card .text-danger {
+  color: #EF5350 !important;
+}
+
+.owner-main-content .card .text-info {
+  color: var(--info) !important;
+}
+
+.owner-main-content .card .text-bakery-accent {
+  color: var(--gold) !important;
+}
+
+/* Profit Highlight Card */
+.profit-card {
+  background: linear-gradient(135deg, var(--bg-card) 0%, #241D17 100%) !important;
+}
+
+/* Icon Bubble Highlights */
+.owner-main-content .rounded-circle.bg-success-subtle {
+  background-color: rgba(76, 175, 80, 0.15) !important;
+  color: #81C784 !important;
+}
+
+.owner-main-content .rounded-circle.bg-primary-subtle {
+  background-color: rgba(233, 185, 110, 0.15) !important;
+  color: var(--gold) !important;
+}
+
+.owner-main-content .rounded-circle.bg-warning-subtle {
+  background-color: rgba(255, 167, 38, 0.15) !important;
+  color: var(--warning) !important;
+}
+
+.owner-main-content .rounded-circle.bg-danger-subtle {
+  background-color: rgba(239, 83, 80, 0.15) !important;
+  color: #EF5350 !important;
+}
+
+.owner-main-content .rounded-circle.bg-info-subtle {
+  background-color: rgba(79, 195, 247, 0.15) !important;
+  color: var(--info) !important;
+}
+
+.owner-main-content .rounded-circle.bg-light {
+  background-color: var(--bg-hover) !important;
+  color: var(--cream) !important;
+}
+
+.owner-main-content .rounded-circle.bg-bakery-cream {
+  background-color: var(--bg-hover) !important;
+  color: var(--gold) !important;
+}
+
+/* ==========================================================================
+   5. Admin Data Tables
+   ========================================================================== */
+
+.admin-table,
+.owner-main-content .table,
+.owner-main-content .table-responsive table {
+  color: var(--cream) !important;
+  background-color: transparent !important;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.owner-main-content .table > :not(caption) > * > * {
+  background-color: transparent !important;
+  color: var(--cream) !important;
+  border-bottom-color: var(--border-color) !important;
+}
+
+.admin-table thead,
+.owner-main-content .table thead,
+.owner-main-content thead.table-light {
+  background-color: var(--bg-secondary) !important;
+  border-bottom: 2px solid var(--border-color) !important;
+}
+
+.admin-table th,
+.owner-main-content .table th,
+.owner-main-content thead.table-light th {
+  background-color: var(--bg-secondary) !important;
+  color: var(--gold) !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border-color) !important;
+  padding: 0.9rem 1rem !important;
+}
+
+.admin-table td,
+.owner-main-content .table td {
+  border-bottom: 1px solid var(--border-color) !important;
+  padding: 0.9rem 1rem !important;
+  vertical-align: middle;
+  color: var(--cream) !important;
+  font-size: 0.9rem;
+}
+
+.admin-table tbody tr:hover,
+.owner-main-content .table tbody tr:hover {
+  background-color: var(--bg-hover) !important;
+}
+
+.owner-main-content .table tbody tr.table-warning {
+  background-color: rgba(233, 185, 110, 0.12) !important;
+  border-left: 3px solid var(--gold);
+}
+
+.owner-main-content .table a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.owner-main-content .table a:hover {
+  color: var(--gold-hover);
+  text-decoration: underline;
+}
+
+.owner-main-content .table a.text-muted {
+  color: var(--text-secondary) !important;
+}
+
+.owner-main-content .table a.text-muted:hover {
+  color: var(--gold) !important;
+}
+
+/* ==========================================================================
+   6. Filter Toolbars, Search Bars & Pill Buttons
+   ========================================================================== */
+
+/* Search Input Groups */
+.owner-main-content .input-group-text {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--gold) !important;
+}
+
+.owner-main-content .form-control,
+.owner-main-content .form-select {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--cream) !important;
+  border-radius: 12px;
+}
+
+.owner-main-content .form-control:focus,
+.owner-main-content .form-select:focus {
+  background-color: var(--bg-hover) !important;
+  border-color: var(--gold) !important;
+  box-shadow: 0 0 0 3px rgba(233, 185, 110, 0.22) !important;
+  color: var(--cream) !important;
+}
+
+/* Admin Filter Buttons */
+.owner-main-content .btn-light {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-secondary) !important;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.owner-main-content .btn-light:hover {
+  background-color: var(--bg-hover) !important;
+  color: var(--cream) !important;
+  border-color: var(--gold) !important;
+}
+
+.owner-main-content .btn-bakery-accent,
+.owner-main-content .btn-primary {
+  background-color: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--bg-primary) !important;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(233, 185, 110, 0.25);
+}
+
+.owner-main-content .btn-bakery-accent:hover,
+.owner-main-content .btn-primary:hover {
+  background-color: var(--gold-hover) !important;
+  border-color: var(--gold-hover) !important;
+  color: var(--bg-primary) !important;
+  box-shadow: var(--gold-glow);
+}
+
+.owner-main-content .btn-outline-secondary {
+  background-color: transparent !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-secondary) !important;
+  transition: all 0.2s ease;
+}
+
+.owner-main-content .btn-outline-secondary:hover {
+  background-color: var(--bg-hover) !important;
+  border-color: var(--gold) !important;
+  color: var(--gold) !important;
+}
+
+.owner-main-content .btn-outline-bakery {
+  background-color: transparent !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--gold) !important;
+  font-weight: 600;
+}
+
+.owner-main-content .btn-outline-bakery:hover {
+  background-color: var(--gold) !important;
+  color: var(--bg-primary) !important;
+  box-shadow: var(--gold-glow);
+}
+
+.owner-main-content .btn-group {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+/* ==========================================================================
+   7. Status Badges & Chips
+   ========================================================================== */
+
+.badge {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.badge.bg-success,
+.badge.bg-success-subtle {
+  background-color: rgba(76, 175, 80, 0.2) !important;
+  color: #81C784 !important;
+  border: 1px solid rgba(76, 175, 80, 0.45) !important;
+}
+
+.badge.bg-warning,
+.badge.bg-warning-subtle {
+  background-color: rgba(255, 167, 38, 0.2) !important;
+  color: var(--gold) !important;
+  border: 1px solid rgba(233, 185, 110, 0.45) !important;
+}
+
+.badge.bg-danger,
+.badge.bg-danger-subtle {
+  background-color: rgba(239, 83, 80, 0.2) !important;
+  color: #EF5350 !important;
+  border: 1px solid rgba(239, 83, 80, 0.45) !important;
+}
+
+.badge.bg-info,
+.badge.bg-info-subtle {
+  background-color: rgba(79, 195, 247, 0.2) !important;
+  color: var(--info) !important;
+  border: 1px solid rgba(79, 195, 247, 0.45) !important;
+}
+
+.badge.bg-light {
+  background-color: var(--bg-hover) !important;
+  color: var(--cream) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.badge.bg-bakery-accent,
+.badge.bg-bakery-gold {
+  background-color: rgba(233, 185, 110, 0.2) !important;
+  color: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+}
+
+/* ==========================================================================
+   8. Modals, Drawers & Confirmations
+   ========================================================================== */
+
+.modal-content {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: var(--shadow-lg) !important;
+  color: var(--cream) !important;
+  border-radius: 20px;
+}
+
+.modal-header,
+.modal-footer {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+.modal-title {
+  color: var(--gold) !important;
+  font-family: var(--font-serif);
+}
+
+.modal-body {
+  color: var(--cream) !important;
+}
+
+.modal-body .text-secondary,
+.modal-body .text-muted {
+  color: var(--text-secondary) !important;
+}
+
+.btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* ==========================================================================
+   9. Alerts & Warning Banners
+   ========================================================================== */
+
+.alert-warning {
+  background-color: rgba(92, 50, 30, 0.45) !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--cream) !important;
+  border-radius: 16px;
+}
+
+.alert-warning strong,
+.alert-warning .text-dark {
+  color: var(--gold) !important;
+}
+
+.alert-warning small {
+  color: var(--cream) !important;
+  opacity: 0.85;
+}
+
+.alert-warning .btn-warning {
+  background-color: var(--gold) !important;
+  border-color: var(--gold) !important;
+  color: var(--bg-primary) !important;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   10. Owner Portal Login (/owner/login)
+   ========================================================================== */
+
+.owner-login-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 15%, rgba(233, 185, 110, 0.12) 0%, var(--bg-primary) 70%) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1rem;
+}
+
+.owner-login-card {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 24px !important;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75), 0 0 35px rgba(233, 185, 110, 0.12) !important;
+  color: var(--cream) !important;
+}
+
+.owner-login-header {
+  background: linear-gradient(180deg, var(--bg-hover) 0%, var(--bg-secondary) 100%) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  padding: 2.2rem 1.75rem 1.75rem !important;
+}
+
+.owner-brand-icon {
+  width: 68px;
+  height: 68px;
+  background: rgba(233, 185, 110, 0.12);
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 25px rgba(233, 185, 110, 0.25);
+  margin-bottom: 0.85rem;
+}
+
+.owner-brand-icon i {
+  color: var(--gold) !important;
+  font-size: 2rem;
+}
+
+.owner-login-header h4 {
+  color: var(--gold) !important;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.owner-login-header p {
+  color: var(--text-secondary) !important;
+  font-size: 0.88rem;
+}
+
+/* Credentials Helper Box */
+.alert-credentials {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid rgba(233, 185, 110, 0.3) !important;
+  border-radius: 14px !important;
+  color: var(--cream) !important;
+  padding: 0.95rem 1.25rem !important;
+}
+
+.alert-credentials .text-bakery-gold {
+  color: var(--gold) !important;
+}
+
+.alert-credentials code {
+  color: var(--gold) !important;
+  background-color: rgba(233, 185, 110, 0.14) !important;
+  border: 1px solid rgba(233, 185, 110, 0.25) !important;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+/* Owner Primary Tabs (Sign In vs Sign Up) */
+.owner-auth-main-tabs {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  padding: 5px;
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.owner-auth-main-tabs .nav-link {
+  color: var(--text-secondary) !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 50px !important;
+  transition: all 0.25s ease;
+  padding: 0.65rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.owner-auth-main-tabs .nav-link:hover {
+  color: var(--cream) !important;
+}
+
+.owner-auth-main-tabs .nav-link.active {
+  background: linear-gradient(135deg, var(--gold) 0%, #D49D4F 100%) !important;
+  color: #111111 !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 18px rgba(233, 185, 110, 0.45) !important;
+}
+
+/* Mode Switcher Tabs */
+.owner-mode-switch {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  padding: 4px;
+}
+
+.owner-mode-switch .nav-link {
+  color: var(--text-secondary) !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 50px !important;
+  transition: all 0.25s ease;
+  padding: 0.55rem 1rem;
+}
+
+.owner-mode-switch .nav-link:hover {
+  color: var(--cream) !important;
+}
+
+.owner-mode-switch .nav-link.active {
+  background-color: var(--gold) !important;
+  color: #111111 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 15px rgba(233, 185, 110, 0.35) !important;
+}
+
+/* Form Controls Inside Login Card */
+.owner-login-card .form-label {
+  color: var(--cream) !important;
+  font-weight: 600;
+  font-size: 0.88rem;
+  margin-bottom: 0.45rem;
+}
+
+.owner-login-card .input-group-text {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-right: none !important;
+  color: var(--gold) !important;
+  font-size: 0.95rem;
+}
+
+.owner-login-card .input-group .form-control {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-left: none !important;
+  color: var(--cream) !important;
+  font-size: 0.95rem;
+  padding: 0.65rem 1rem;
+}
+
+.owner-login-card .input-group .form-control::placeholder {
+  color: var(--text-secondary) !important;
+  opacity: 0.7;
+}
+
+.owner-login-card .input-group .form-control:focus {
+  background-color: var(--bg-hover) !important;
+  border-color: var(--gold) !important;
+  box-shadow: 0 0 0 3px rgba(233, 185, 110, 0.22) !important;
+}
+
+.owner-login-card .input-group:focus-within .input-group-text {
+  border-color: var(--gold) !important;
+}
+
+.owner-login-card .password-toggle-btn {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-left: none !important;
+  color: var(--text-secondary) !important;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.owner-login-card .password-toggle-btn:hover {
+  color: var(--gold) !important;
+}
+
+/* OTP Badge & Inputs */
+.owner-otp-badge {
+  background-color: var(--bg-secondary) !important;
+  color: var(--cream) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.owner-otp-input {
+  letter-spacing: 8px !important;
+  font-size: 1.6rem !important;
+  color: var(--gold) !important;
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.owner-otp-input:focus {
+  background-color: var(--bg-card) !important;
+  border-color: var(--gold) !important;
+  box-shadow: 0 0 0 3px rgba(233, 185, 110, 0.25) !important;
+}

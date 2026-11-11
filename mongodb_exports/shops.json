@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "6acda62c4c3b5f1e621c2e33",
+    "shopName": "SweetDelight Bakery & Patisserie",
+    "ownerName": "Deepa Dhiya",
+    "owner": "6acda62c4c3b5f1e621c2e25",
+    "shopLogo": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&auto=format&fit=crop&q=80",
+    "contactNumber": "9876543210",
+    "email": "contact@sweetdelight.com",
+    "street": "42 Pastry Lane, Indiranagar",
+    "lane": "2nd Cross, Near Central Park",
+    "village": "Halasuru",
+    "city": "Bangalore",
+    "district": "Bangalore Urban",
+    "state": "Karnataka",
+    "pincode": "560038",
+    "isVerified": true,
+    "otherDocuments": [],
+    "createdAt": "2026-10-13T03:31:56.626Z",
+    "updatedAt": "2026-10-27T03:03:18.805Z",
+    "__v": 0
+  }
+]

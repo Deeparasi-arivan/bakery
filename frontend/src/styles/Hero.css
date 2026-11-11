@@ -1,0 +1,189 @@
+/* ==========================================================================
+   SweetHome Bakery – Hero Section CSS
+   Luxury Dark Theme
+   ========================================================================== */
+
+.hero-section {
+  background: radial-gradient(circle at 80% 20%, rgba(92, 50, 30, 0.35) 0%, rgba(17, 17, 17, 1) 70%) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  position: relative;
+  overflow: hidden;
+  padding: 4.5rem 0;
+}
+
+/* Subtle background glowing orb */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(233, 185, 110, 0.12) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-badge,
+.hero-section .badge {
+  background-color: rgba(41, 35, 30, 0.8) !important;
+  color: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+  padding: 0.6rem 1.25rem !important;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.3rem, 5vw, 3.6rem);
+  font-weight: 700;
+  color: var(--cream) !important;
+  line-height: 1.15;
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero-title span,
+.hero-title .text-bakery-accent {
+  color: var(--gold) !important;
+  background: linear-gradient(135deg, var(--gold) 0%, #FFF1D6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-description,
+.hero-section p.lead {
+  color: var(--text-secondary) !important;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 540px;
+  margin-bottom: 2rem;
+}
+
+/* Hero Action Buttons */
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-buttons .btn-primary,
+.hero-section .btn-bakery-accent {
+  background-color: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--bg-primary) !important;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(233, 185, 110, 0.25);
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .btn-primary:hover,
+.hero-section .btn-bakery-accent:hover {
+  background-color: var(--gold-hover) !important;
+  border-color: var(--gold-hover) !important;
+  color: var(--bg-primary) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--gold-glow);
+}
+
+.hero-buttons .btn-secondary,
+.hero-section .btn-outline-bakery {
+  background-color: transparent !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--gold) !important;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .btn-secondary:hover,
+.hero-section .btn-outline-bakery:hover {
+  background-color: var(--gold) !important;
+  color: var(--bg-primary) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--gold-glow);
+}
+
+/* Trust Badges */
+.hero-section .border-top {
+  border-color: var(--border-color) !important;
+}
+
+.hero-section .border-top small {
+  color: var(--cream) !important;
+}
+
+.hero-section .border-top i.text-success {
+  color: var(--success) !important;
+}
+
+.hero-section .border-top i.text-bakery-accent {
+  color: var(--gold) !important;
+}
+
+/* Hero Image Showcase */
+.hero-image,
+.hero-main-img {
+  border: 2px solid var(--border-color) !important;
+  border-radius: 24px !important;
+  box-shadow: var(--shadow-lg), 0 0 35px rgba(92, 50, 30, 0.3) !important;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-main-img:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-lg), var(--gold-glow);
+}
+
+.hero-img-backdrop {
+  background: radial-gradient(circle, rgba(92, 50, 30, 0.6) 0%, transparent 70%) !important;
+  filter: blur(40px) !important;
+  opacity: 0.7 !important;
+}
+
+/* Floating Info Card in Hero */
+.hero-section .position-absolute.bottom-0.start-0 {
+  background: rgba(28, 26, 24, 0.9) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color) !important;
+  color: var(--cream) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.hero-section .position-absolute.bottom-0.start-0 .text-dark {
+  color: var(--cream) !important;
+}
+
+.hero-section .position-absolute.bottom-0.start-0 .text-muted {
+  color: var(--text-secondary) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}

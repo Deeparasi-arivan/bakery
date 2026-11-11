@@ -1,0 +1,642 @@
+[
+  {
+    "_id": "6acda62c4c3b5f1e621c2e61",
+    "orderNumber": "BK-20261013-1001",
+    "customer": "6acda62c4c3b5f1e621c2e57",
+    "items": [
+      {
+        "product": "6acda62c4c3b5f1e621c2e47",
+        "name": "Classic Vanilla Bean Cloud Cake",
+        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&auto=format&fit=crop&q=80",
+        "price": 550,
+        "quantity": 1,
+        "subtotal": 550,
+        "_id": "6acda62c4c3b5f1e621c2e62"
+      },
+      {
+        "product": "6acda62c4c3b5f1e621c2e50",
+        "name": "Assorted Gourmet Cupcakes Box (Pack of 6)",
+        "image": "https://images.unsplash.com/photo-1587668178277-295251f900ce?w=600&auto=format&fit=crop&q=80",
+        "price": 360,
+        "quantity": 1,
+        "subtotal": 360,
+        "_id": "6acda62c4c3b5f1e621c2e63"
+      }
+    ],
+    "subtotal": 910,
+    "deliveryFee": 0,
+    "discount": 0,
+    "totalAmount": 910,
+    "deliveryAddress": {
+      "name": "Priya Ramesh",
+      "phoneNumber": "9876500001",
+      "doorNumber": "Flat 302, Green Glen Apts",
+      "street": "14th Cross, 6th Main Road",
+      "village": "Koramangala",
+      "taluk": "Bangalore South",
+      "district": "Bangalore Urban",
+      "state": "Karnataka",
+      "pincode": "560034"
+    },
+    "paymentMethod": "RAZORPAY",
+    "paymentStatus": "Completed",
+    "orderStatus": "Delivered",
+    "notes": "",
+    "statusHistory": [
+      {
+        "status": "Pending",
+        "timestamp": "2026-10-12T22:31:56.689Z",
+        "comment": "",
+        "_id": "6acda62c4c3b5f1e621c2e64"
+      },
+      {
+        "status": "Confirmed",
+        "timestamp": "2026-10-12T23:31:56.689Z",
+        "comment": "",
+        "_id": "6acda62c4c3b5f1e621c2e65"
+      },
+      {
+        "status": "Preparing",
+        "timestamp": "2026-10-13T00:31:56.689Z",
+        "comment": "",
+        "_id": "6acda62c4c3b5f1e621c2e66"
+      },
+      {
+        "status": "Ready",
+        "timestamp": "2026-10-13T01:31:56.689Z",
+        "comment": "",
+        "_id": "6acda62c4c3b5f1e621c2e67"
+      },
+      {
+        "status": "Out for Delivery",
+        "timestamp": "2026-10-13T02:31:56.689Z",
+        "comment": "",
+        "_id": "6acda62c4c3b5f1e621c2e68"
+      },
+      {
+        "status": "Delivered",
+        "timestamp": "2026-10-13T03:31:56.689Z",
+        "comment": "",
+        "_id": "6acda62c4c3b5f1e621c2e69"
+      }
+    ],
+    "createdAt": "2026-10-13T03:31:56.698Z",
+    "updatedAt": "2026-10-13T03:31:56.698Z",
+    "__v": 0
+  },
+  {
+    "_id": "6acda62c4c3b5f1e621c2e6b",
+    "orderNumber": "BK-20261013-1002",
+    "customer": "6acda62c4c3b5f1e621c2e59",
+    "items": [
+      {
+        "product": "6acda62c4c3b5f1e621c2e4a",
+        "name": "Belgian Dark Truffle Chocolate Cake",
+        "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&auto=format&fit=crop&q=80",
+        "price": 720,
+        "quantity": 1,
+        "subtotal": 720,
+        "_id": "6acda62c4c3b5f1e621c2e6c"
+      }
+    ],
+    "subtotal": 720,
+    "deliveryFee": 0,
+    "discount": 0,
+    "totalAmount": 720,
+    "deliveryAddress": {
+      "name": "Rahul Verma",
+      "phoneNumber": "9876500002",
+      "doorNumber": "Villa #18, Palm Meadows",
+      "street": "Airport Road",
+      "village": "Varthur",
+      "taluk": "Bangalore East",
+      "district": "Bangalore Urban",
+      "state": "Karnataka",
+      "pincode": "560066"
+    },
+    "paymentMethod": "COD",
+    "paymentStatus": "Pending",
+    "orderStatus": "Preparing",
+    "notes": "",
+    "statusHistory": [
+      {
+        "status": "Pending",
+        "timestamp": "2026-10-13T03:01:56.700Z",
+        "comment": "",
+        "_id": "6acda62c4c3b5f1e621c2e6d"
+      },
+      {
+        "status": "Confirmed",
+        "timestamp": "2026-10-13T03:11:56.700Z",
+        "comment": "",
+        "_id": "6acda62c4c3b5f1e621c2e6e"
+      },
+      {
+        "status": "Preparing",
+        "timestamp": "2026-10-13T03:21:56.700Z",
+        "comment": "",
+        "_id": "6acda62c4c3b5f1e621c2e6f"
+      }
+    ],
+    "createdAt": "2026-10-13T03:31:56.703Z",
+    "updatedAt": "2026-10-13T03:31:56.703Z",
+    "__v": 0
+  },
+  {
+    "_id": "6acee84c073101737d55a213",
+    "orderNumber": "BK-20261014-9542",
+    "customer": "6acda62c4c3b5f1e621c2e57",
+    "items": [
+      {
+        "product": "6acda62c4c3b5f1e621c2e47",
+        "name": "Classic Vanilla Bean Cloud Cake",
+        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&auto=format&fit=crop&q=80",
+        "price": 550,
+        "quantity": 1,
+        "subtotal": 550,
+        "_id": "6acee84c073101737d55a214"
+      }
+    ],
+    "subtotal": 550,
+    "deliveryFee": 0,
+    "discount": 0,
+    "totalAmount": 550,
+    "deliveryAddress": {
+      "name": "Priya Ramesh",
+      "phoneNumber": "9876500001",
+      "doorNumber": "Flat 302, Green Glen Apts",
+      "street": "14th Cross, 6th Main Road",
+      "village": "Koramangala",
+      "taluk": "Bangalore South",
+      "district": "Bangalore Urban",
+      "state": "Karnataka",
+      "pincode": "560034"
+    },
+    "paymentMethod": "COD",
+    "paymentStatus": "Pending",
+    "orderStatus": "Confirmed",
+    "notes": "Please ring doorbell",
+    "statusHistory": [
+      {
+        "status": "Pending",
+        "timestamp": "2026-10-14T02:26:20.858Z",
+        "comment": "Order placed via Cash on Delivery",
+        "_id": "6acee84c073101737d55a215"
+      },
+      {
+        "status": "Confirmed",
+        "timestamp": "2026-10-28T03:13:53.675Z",
+        "comment": "Kitchen accepted and confirmed customer order",
+        "_id": "6ae168711d988d27938fd65d"
+      }
+    ],
+    "createdAt": "2026-10-14T02:26:20.866Z",
+    "updatedAt": "2026-10-28T03:13:53.681Z",
+    "__v": 1
+  },
+  {
+    "_id": "6ae2b34f5dfda61eb9a1f7b8",
+    "orderNumber": "BK-20261029-3866",
+    "customer": "6acda62c4c3b5f1e621c2e25",
+    "items": [
+      {
+        "product": "6acda62c4c3b5f1e621c2e4e",
+        "name": "Classic Crimson Red Velvet Cake",
+        "image": "https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?w=600&auto=format&fit=crop&q=80",
+        "price": 750,
+        "quantity": 2,
+        "subtotal": 1500,
+        "_id": "6ae2b34f5dfda61eb9a1f7b9"
+      },
+      {
+        "product": "6acda62c4c3b5f1e621c2e4a",
+        "name": "Belgian Dark Truffle Chocolate Cake",
+        "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&auto=format&fit=crop&q=80",
+        "price": 720,
+        "quantity": 1,
+        "subtotal": 720,
+        "_id": "6ae2b34f5dfda61eb9a1f7ba"
+      }
+    ],
+    "subtotal": 2220,
+    "deliveryFee": 0,
+    "discount": 0,
+    "totalAmount": 2220,
+    "deliveryAddress": {
+      "name": "Deepa Dhiya",
+      "phoneNumber": "9042487448",
+      "doorNumber": "52",
+      "street": "No :2/253 mettu street, v puthur village, kandachipuram tk, Viluppuram dis, pincode 605752",
+      "village": "puththur",
+      "taluk": "thirukkovilur",
+      "district": "viiluppuram",
+      "state": "Tamil Nadu",
+      "pincode": "605752"
+    },
+    "paymentMethod": "COD",
+    "paymentStatus": "Pending",
+    "orderStatus": "Cancelled",
+    "notes": "",
+    "statusHistory": [
+      {
+        "status": "Pending",
+        "timestamp": "2026-10-29T02:45:35.369Z",
+        "comment": "Order placed via Cash on Delivery",
+        "_id": "6ae2b34f5dfda61eb9a1f7bb"
+      },
+      {
+        "status": "Confirmed",
+        "timestamp": "2026-11-02T02:07:33.199Z",
+        "comment": "Order accepted and confirmed by bakery manager",
+        "_id": "6ae7f0654153cfdf9aa6af3c"
+      },
+      {
+        "status": "Cancelled",
+        "timestamp": "2026-11-10T02:03:40.476Z",
+        "comment": "Customer requested cancellation via portal",
+        "_id": "6af27b7c7668ce4441aa0e9a"
+      }
+    ],
+    "createdAt": "2026-10-29T02:45:35.389Z",
+    "updatedAt": "2026-11-10T02:03:40.498Z",
+    "__v": 2
+  },
+  {
+    "_id": "6ae2b46d5dfda61eb9a1fac8",
+    "orderNumber": "BK-20261029-4242",
+    "customer": "6acda62c4c3b5f1e621c2e25",
+    "items": [
+      {
+        "product": "6acda62c4c3b5f1e621c2e4c",
+        "name": "Authentic Black Forest Cherry Gateau",
+        "image": "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=600&auto=format&fit=crop&q=80",
+        "price": 680,
+        "quantity": 1,
+        "subtotal": 680,
+        "_id": "6ae2b46d5dfda61eb9a1fac9"
+      }
+    ],
+    "subtotal": 680,
+    "deliveryFee": 0,
+    "discount": 0,
+    "totalAmount": 680,
+    "deliveryAddress": {
+      "name": "Deepa Dhiya",
+      "phoneNumber": "9042487448",
+      "doorNumber": "52",
+      "street": "No :2/253 mettu street, v puthur village, kandachipuram tk, Viluppuram dis, pincode 605752",
+      "village": "puththur",
+      "taluk": "thirukkovilur",
+      "district": "viiluppuram",
+      "state": "Tamil Nadu",
+      "pincode": "605752"
+    },
+    "paymentMethod": "COD",
+    "paymentStatus": "Completed",
+    "orderStatus": "Delivered",
+    "notes": "",
+    "statusHistory": [
+      {
+        "status": "Pending",
+        "timestamp": "2026-10-29T02:50:21.267Z",
+        "comment": "Order placed via Cash on Delivery",
+        "_id": "6ae2b46d5dfda61eb9a1faca"
+      },
+      {
+        "status": "Confirmed",
+        "timestamp": "2026-10-29T02:51:15.215Z",
+        "comment": "Order accepted and confirmed by bakery manager",
+        "_id": "6ae2b4a35dfda61eb9a1fbd9"
+      },
+      {
+        "status": "Preparing",
+        "timestamp": "2026-10-29T02:51:54.353Z",
+        "comment": "Admin updated status to Preparing",
+        "_id": "6ae2b4ca5dfda61eb9a1fcd7"
+      },
+      {
+        "status": "Ready",
+        "timestamp": "2026-10-29T02:51:57.556Z",
+        "comment": "Admin updated status to Ready",
+        "_id": "6ae2b4cd5dfda61eb9a1fd1c"
+      },
+      {
+        "status": "Out for Delivery",
+        "timestamp": "2026-10-29T02:52:28.392Z",
+        "comment": "Order handed over to delivery partner",
+        "_id": "6ae2b4ec5dfda61eb9a1fe03"
+      },
+      {
+        "status": "Delivered",
+        "timestamp": "2026-10-29T02:52:49.034Z",
+        "comment": "Cake delivered to customer successfully",
+        "_id": "6ae2b5015dfda61eb9a1feb4"
+      }
+    ],
+    "createdAt": "2026-10-29T02:50:21.271Z",
+    "updatedAt": "2026-10-29T02:52:49.035Z",
+    "__v": 5
+  },
+  {
+    "_id": "6ae7f7ef7aec02fffa3d9753",
+    "orderNumber": "BK-20261102-9867",
+    "customer": "6acda62c4c3b5f1e621c2e25",
+    "items": [
+      {
+        "product": "6acda62c4c3b5f1e621c2e52",
+        "name": "Classic Chocolate Glazed Ring Donut (Box of 4)",
+        "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&auto=format&fit=crop&q=80",
+        "price": 240,
+        "quantity": 1,
+        "subtotal": 240,
+        "_id": "6ae7f7ef7aec02fffa3d9754"
+      }
+    ],
+    "subtotal": 240,
+    "deliveryFee": 40,
+    "discount": 0,
+    "totalAmount": 280,
+    "deliveryAddress": {
+      "name": "Deepa Dhiya",
+      "phoneNumber": "9042487448",
+      "doorNumber": "52",
+      "street": "No :2/253 mettu street, v puthur village, kandachipuram tk, Viluppuram dis, pincode 605752",
+      "village": "puththur",
+      "taluk": "thirukkovilur",
+      "district": "viiluppuram",
+      "state": "Tamil Nadu",
+      "pincode": "605752"
+    },
+    "paymentMethod": "COD",
+    "paymentStatus": "Completed",
+    "orderStatus": "Delivered",
+    "notes": "",
+    "statusHistory": [
+      {
+        "status": "Pending",
+        "timestamp": "2026-11-02T02:39:43.087Z",
+        "comment": "Order placed via Cash on Delivery",
+        "_id": "6ae7f7ef7aec02fffa3d9755"
+      },
+      {
+        "status": "Confirmed",
+        "timestamp": "2026-11-02T02:43:27.299Z",
+        "comment": "Order accepted and confirmed by bakery manager",
+        "_id": "6ae7f8cf7aec02fffa3d9c82"
+      },
+      {
+        "status": "Out for Delivery",
+        "timestamp": "2026-11-02T02:43:36.532Z",
+        "comment": "Admin updated status to Out for Delivery",
+        "_id": "6ae7f8d87aec02fffa3d9d59"
+      },
+      {
+        "status": "Delivered",
+        "timestamp": "2026-11-02T02:44:41.147Z",
+        "comment": "Cake delivered to customer successfully",
+        "_id": "6ae7f9197aec02fffa3da09b"
+      }
+    ],
+    "createdAt": "2026-11-02T02:39:43.104Z",
+    "updatedAt": "2026-11-02T02:44:41.149Z",
+    "__v": 3
+  },
+  {
+    "_id": "6ae7f8477aec02fffa3d987d",
+    "orderNumber": "BK-20261102-5614",
+    "customer": "6acda62c4c3b5f1e621c2e25",
+    "items": [
+      {
+        "product": "6acda62c4c3b5f1e621c2e4b",
+        "name": "Molten Chocolate Hazelnut Crunch Cake",
+        "image": "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=600&auto=format&fit=crop&q=80",
+        "price": 850,
+        "quantity": 1,
+        "subtotal": 850,
+        "_id": "6ae7f8477aec02fffa3d987e"
+      }
+    ],
+    "subtotal": 850,
+    "deliveryFee": 0,
+    "discount": 0,
+    "totalAmount": 850,
+    "deliveryAddress": {
+      "name": "Deepa Dhiya",
+      "phoneNumber": "9042487448",
+      "doorNumber": "52",
+      "street": "No :2/253 mettu street, v puthur village, kandachipuram tk, Viluppuram dis, pincode 605752",
+      "village": "puththur",
+      "taluk": "thirukkovilur",
+      "district": "viiluppuram",
+      "state": "Tamil Nadu",
+      "pincode": "605752"
+    },
+    "paymentMethod": "COD",
+    "paymentStatus": "Completed",
+    "orderStatus": "Delivered",
+    "notes": "",
+    "statusHistory": [
+      {
+        "status": "Pending",
+        "timestamp": "2026-11-02T02:41:11.416Z",
+        "comment": "Order placed via Cash on Delivery",
+        "_id": "6ae7f8477aec02fffa3d987f"
+      },
+      {
+        "status": "Confirmed",
+        "timestamp": "2026-11-02T02:43:11.130Z",
+        "comment": "Order accepted and confirmed by bakery manager",
+        "_id": "6ae7f8bf7aec02fffa3d9bc4"
+      },
+      {
+        "status": "Delivered",
+        "timestamp": "2026-11-02T02:43:23.618Z",
+        "comment": "Admin updated status to Delivered",
+        "_id": "6ae7f8cb7aec02fffa3d9c34"
+      },
+      {
+        "status": "Delivered",
+        "timestamp": "2026-11-02T03:26:49.190Z",
+        "comment": "Fresh cake delivered to customer",
+        "_id": "6ae802f996b91401fde921dd"
+      }
+    ],
+    "createdAt": "2026-11-02T02:41:11.419Z",
+    "updatedAt": "2026-11-02T03:26:49.195Z",
+    "__v": 3
+  },
+  {
+    "_id": "6aebf0bb669b8b4c3d433753",
+    "orderNumber": "BK-20261105-6301",
+    "customer": "6aebefe4669b8b4c3d433714",
+    "items": [
+      {
+        "product": "6acda62c4c3b5f1e621c2e4b",
+        "name": "Molten Chocolate Hazelnut Crunch Cake",
+        "image": "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=600&auto=format&fit=crop&q=80",
+        "price": 850,
+        "quantity": 1,
+        "subtotal": 850,
+        "_id": "6aebf0bb669b8b4c3d433754"
+      }
+    ],
+    "subtotal": 850,
+    "deliveryFee": 0,
+    "discount": 0,
+    "totalAmount": 850,
+    "deliveryAddress": {
+      "name": "deepa sri",
+      "phoneNumber": "9042487448",
+      "doorNumber": "52",
+      "street": "No :2/253 mettu street, v puthur village, kandachipuram tk, Viluppuram dis, pincode 605752",
+      "village": "thirukkovur",
+      "taluk": "thirukovilur",
+      "district": "VILLUPURAM",
+      "state": "Tamil Nadu",
+      "pincode": "605752"
+    },
+    "paymentMethod": "COD",
+    "paymentStatus": "Pending",
+    "orderStatus": "Out for Delivery",
+    "notes": "",
+    "statusHistory": [
+      {
+        "status": "Pending",
+        "timestamp": "2026-11-05T02:58:03.671Z",
+        "comment": "Order placed via Cash on Delivery",
+        "_id": "6aebf0bb669b8b4c3d433755"
+      },
+      {
+        "status": "Confirmed",
+        "timestamp": "2026-11-05T03:25:11.149Z",
+        "comment": "Order accepted and confirmed by bakery manager",
+        "_id": "6aebf717669b8b4c3d433bb3"
+      },
+      {
+        "status": "Out for Delivery",
+        "timestamp": "2026-11-10T02:06:16.642Z",
+        "comment": "Admin updated status to Out for Delivery",
+        "_id": "6af27c187668ce4441aa146d"
+      }
+    ],
+    "createdAt": "2026-11-05T02:58:03.678Z",
+    "updatedAt": "2026-11-10T02:06:16.644Z",
+    "__v": 2
+  },
+  {
+    "_id": "6af27b6d7668ce4441aa0e0d",
+    "orderNumber": "BK-20261110-5503",
+    "customer": "6acda62c4c3b5f1e621c2e25",
+    "items": [
+      {
+        "product": "6acda62c4c3b5f1e621c2e52",
+        "name": "Classic Chocolate Glazed Ring Donut (Box of 4)",
+        "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&auto=format&fit=crop&q=80",
+        "price": 240,
+        "quantity": 1,
+        "subtotal": 240,
+        "_id": "6af27b6d7668ce4441aa0e0e"
+      }
+    ],
+    "subtotal": 240,
+    "deliveryFee": 40,
+    "discount": 0,
+    "totalAmount": 280,
+    "deliveryAddress": {
+      "name": "Deepa Dhiya",
+      "phoneNumber": "9042487448",
+      "doorNumber": "52",
+      "street": "No :2/253 mettu street, v puthur village, kandachipuram tk, Viluppuram dis, pincode 605752",
+      "village": "puththur",
+      "taluk": "thirukkovilur",
+      "district": "viiluppuram",
+      "state": "Tamil Nadu",
+      "pincode": "605752"
+    },
+    "paymentMethod": "COD",
+    "paymentStatus": "Completed",
+    "orderStatus": "Delivered",
+    "notes": "",
+    "statusHistory": [
+      {
+        "status": "Pending",
+        "timestamp": "2026-11-10T02:03:25.334Z",
+        "comment": "Order placed via Cash on Delivery",
+        "_id": "6af27b6d7668ce4441aa0e0f"
+      },
+      {
+        "status": "Confirmed",
+        "timestamp": "2026-11-10T02:06:01.222Z",
+        "comment": "Order accepted and confirmed by bakery manager",
+        "_id": "6af27c097668ce4441aa1354"
+      },
+      {
+        "status": "Delivered",
+        "timestamp": "2026-11-10T02:06:04.603Z",
+        "comment": "Admin updated status to Delivered",
+        "_id": "6af27c0c7668ce4441aa138a"
+      }
+    ],
+    "createdAt": "2026-11-10T02:03:25.355Z",
+    "updatedAt": "2026-11-10T02:06:04.606Z",
+    "__v": 2
+  },
+  {
+    "_id": "6af281db0b6fea1df461a6c2",
+    "orderNumber": "BK-20261110-1981",
+    "customer": "6acda62c4c3b5f1e621c2e25",
+    "items": [
+      {
+        "product": "6acda62c4c3b5f1e621c2e48",
+        "name": "Celebration Rainbow Birthday Cake",
+        "image": "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=600&auto=format&fit=crop&q=80",
+        "price": 890,
+        "quantity": 1,
+        "subtotal": 890,
+        "_id": "6af281db0b6fea1df461a6c3"
+      }
+    ],
+    "subtotal": 890,
+    "deliveryFee": 0,
+    "discount": 0,
+    "totalAmount": 890,
+    "deliveryAddress": {
+      "name": "Deepa Dhiya",
+      "phoneNumber": "9042487448",
+      "doorNumber": "52",
+      "street": "No :2/253 mettu street, v puthur village, kandachipuram tk, Viluppuram dis, pincode 605752",
+      "village": "puththur",
+      "taluk": "thirukkovilur",
+      "district": "viiluppuram",
+      "state": "Tamil Nadu",
+      "pincode": "605752"
+    },
+    "paymentMethod": "COD",
+    "paymentStatus": "Completed",
+    "orderStatus": "Delivered",
+    "notes": "",
+    "statusHistory": [
+      {
+        "status": "Pending",
+        "timestamp": "2026-11-10T02:30:51.745Z",
+        "comment": "Order placed via Cash on Delivery",
+        "_id": "6af281db0b6fea1df461a6c4"
+      },
+      {
+        "status": "Out for Delivery",
+        "timestamp": "2026-11-10T02:31:33.664Z",
+        "comment": "Admin updated status to Out for Delivery",
+        "_id": "6af282050b6fea1df461a899"
+      },
+      {
+        "status": "Delivered",
+        "timestamp": "2026-11-10T02:31:40.655Z",
+        "comment": "Admin updated status to Delivered",
+        "_id": "6af2820c0b6fea1df461a908"
+      }
+    ],
+    "createdAt": "2026-11-10T02:30:51.768Z",
+    "updatedAt": "2026-11-10T02:31:40.657Z",
+    "__v": 2
+  }
+]

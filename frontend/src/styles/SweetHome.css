@@ -1,0 +1,340 @@
+/* ==========================================================================
+   SweetHome Bakery – Complete Luxury Dark Theme
+   Master Design System & Global Variables
+   ========================================================================== */
+
+@import './Navbar.css';
+@import './Hero.css';
+@import './Products.css';
+@import './Categories.css';
+@import './Forms.css';
+@import './Cart.css';
+@import './Checkout.css';
+@import './AdminDashboard.css';
+@import './OrderManagement.css';
+@import './Footer.css';
+
+:root {
+  /* SweetHome Luxury Dark Palette */
+  --bg-primary: #111111;
+  --bg-secondary: #171513;
+  --bg-card: #1C1A18;
+  --bg-hover: #29231E;
+  --chocolate: #5C321E;
+  --gold: #E9B96E;
+  --gold-hover: #F5CC88;
+  --cream: #FFF1D6;
+  --text-secondary: #C8BBAA;
+  --border-color: #39312B;
+  --success: #4CAF50;
+  --danger: #EF5350;
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  /* Shadow & Glow Accents */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.7);
+  --gold-glow: 0 0 20px rgba(233, 185, 110, 0.22);
+  --gold-glow-strong: 0 0 30px rgba(233, 185, 110, 0.45);
+
+  /* Compatibility with existing bakery classes */
+  --bakery-cream: #171513;
+  --bakery-cream-light: #1C1A18;
+  --bakery-dark: #111111;
+  --bakery-brown: #5C321E;
+  --bakery-accent: #E9B96E;
+  --bakery-caramel: #E9B96E;
+  --bakery-gold: #E9B96E;
+  --bakery-rose: #29231E;
+  --bakery-rose-dark: #E9B96E;
+}
+
+/* ==========================================================================
+   Global Reset & Base Dark Styles
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: var(--bg-primary) !important;
+  color: var(--cream) !important;
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--chocolate);
+  color: var(--cream);
+}
+
+/* Typography Defaults */
+h1, h2, h3, h4, h5, h6,
+.font-serif,
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+  font-family: var(--font-serif);
+  color: var(--cream) !important;
+  letter-spacing: -0.01em;
+}
+
+p, span, li, label, small {
+  color: inherit;
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+a:hover, a:focus {
+  color: var(--gold-hover);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+/* Focus Outline for Accessibility */
+:focus-visible {
+  outline: 2px solid var(--gold) !important;
+  outline-offset: 3px;
+}
+
+/* ==========================================================================
+   Bootstrap 5 Dark Overrides
+   ========================================================================== */
+
+.bg-white,
+.bg-light,
+.bg-bakery-cream,
+.bg-bakery-cream-light {
+  background-color: var(--bg-card) !important;
+  color: var(--cream) !important;
+}
+
+.bg-bakery-dark,
+.bg-dark {
+  background-color: var(--bg-secondary) !important;
+  color: var(--cream) !important;
+}
+
+.bg-bakery-accent {
+  background-color: var(--gold) !important;
+  color: var(--bg-primary) !important;
+}
+
+.text-dark {
+  color: var(--cream) !important;
+}
+
+.text-muted,
+.text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.text-bakery-accent,
+.text-bakery-gold {
+  color: var(--gold) !important;
+}
+
+.border,
+.border-top,
+.border-bottom,
+.border-start,
+.border-end {
+  border-color: var(--border-color) !important;
+}
+
+.border-bakery-accent {
+  border-color: var(--gold) !important;
+}
+
+/* Card Overrides */
+.card {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--cream) !important;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgba(233, 185, 110, 0.4) !important;
+}
+
+.card-header,
+.card-footer {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--cream) !important;
+}
+
+/* Tables Overrides */
+.table {
+  color: var(--cream) !important;
+  border-color: var(--border-color) !important;
+  background-color: transparent !important;
+}
+
+.table > :not(caption) > * > * {
+  background-color: transparent !important;
+  color: var(--cream) !important;
+  border-bottom-color: var(--border-color) !important;
+}
+
+.table-light,
+thead.table-light th {
+  background-color: var(--bg-secondary) !important;
+  color: var(--gold) !important;
+  border-color: var(--border-color) !important;
+}
+
+.table tbody tr:hover {
+  background-color: var(--bg-hover) !important;
+}
+
+/* Dropdown Menus */
+.dropdown-menu {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: var(--shadow-md) !important;
+  border-radius: 12px;
+  color: var(--cream) !important;
+}
+
+.dropdown-item {
+  color: var(--cream) !important;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--bg-hover) !important;
+  color: var(--gold) !important;
+}
+
+.dropdown-divider {
+  border-color: var(--border-color) !important;
+}
+
+/* Modals */
+.modal-content {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: var(--shadow-lg) !important;
+  color: var(--cream) !important;
+  border-radius: 20px;
+}
+
+.modal-header,
+.modal-footer {
+  border-color: var(--border-color) !important;
+}
+
+.btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Badges */
+.badge {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.badge.bg-bakery-accent {
+  background-color: var(--gold) !important;
+  color: var(--bg-primary) !important;
+}
+
+.badge.bg-bakery-gold {
+  background-color: var(--gold) !important;
+  color: var(--bg-primary) !important;
+}
+
+.badge.bg-bakery-cream {
+  background-color: var(--bg-hover) !important;
+  color: var(--gold) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.badge.bg-light {
+  background-color: var(--bg-hover) !important;
+  color: var(--gold) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+/* Shadows */
+.shadow-xs {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35) !important;
+}
+
+.shadow-sm {
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.shadow,
+.shadow-md {
+  box-shadow: var(--shadow-md) !important;
+}
+
+.shadow-lg {
+  box-shadow: var(--shadow-lg) !important;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGold {
+  0% {
+    box-shadow: 0 0 0 0 rgba(233, 185, 110, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(233, 185, 110, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(233, 185, 110, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

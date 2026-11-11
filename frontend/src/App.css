@@ -1,0 +1,208 @@
+/* =========================================================
+   SweetDelight Bakery & Cake Shop Management System
+   Theme: Cream, Chocolate, Caramel, and Pastel Rose
+   ========================================================= */
+
+:root {
+  --bakery-cream: #FAF5EE;
+  --bakery-cream-light: #FFFDF9;
+  --bakery-dark: #2E1C14;
+  --bakery-brown: #4A2E1F;
+  --bakery-accent: #8B4513;
+  --bakery-caramel: #C68B59;
+  --bakery-gold: #E09F3E;
+  --bakery-rose: #FDE8E9;
+  --bakery-rose-dark: #D9777F;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bakery-cream);
+  color: #332B25;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom Backgrounds & Colors */
+.bg-bakery-cream {
+  background-color: var(--bakery-cream) !important;
+}
+
+.bg-bakery-dark {
+  background-color: var(--bakery-dark) !important;
+}
+
+.bg-bakery-accent {
+  background-color: var(--bakery-accent) !important;
+}
+
+.text-bakery-accent {
+  color: var(--bakery-accent) !important;
+}
+
+.text-bakery-gold {
+  color: var(--bakery-gold) !important;
+}
+
+.text-bakery-dark {
+  color: var(--bakery-dark) !important;
+}
+
+.border-bakery-accent {
+  border-color: var(--bakery-accent) !important;
+}
+
+/* Custom Buttons */
+.btn-bakery-accent {
+  background-color: var(--bakery-accent);
+  border-color: var(--bakery-accent);
+  color: #ffffff;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-bakery-accent:hover,
+.btn-bakery-accent:focus {
+  background-color: #6d340e;
+  border-color: #6d340e;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-outline-bakery {
+  color: var(--bakery-accent);
+  border-color: var(--bakery-accent);
+  background-color: transparent;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-outline-bakery:hover,
+.btn-outline-bakery:focus {
+  background-color: var(--bakery-accent);
+  border-color: var(--bakery-accent);
+  color: #ffffff;
+}
+
+/* Shadow Utilities */
+.shadow-xs {
+  box-shadow: 0 2px 6px rgba(46, 28, 20, 0.05);
+}
+
+.shadow-sm {
+  box-shadow: 0 4px 12px rgba(46, 28, 20, 0.07) !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 12px 30px rgba(46, 28, 20, 0.12) !important;
+}
+
+/* Product Card Aesthetics */
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(46, 28, 20, 0.1) !important;
+}
+
+.product-img {
+  transition: transform 0.35s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.04);
+}
+
+/* Hover effects */
+.hover-accent:hover {
+  color: var(--bakery-accent) !important;
+}
+
+.hover-white:hover {
+  color: #ffffff !important;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(46, 28, 20, 0.08) !important;
+}
+
+/* Owner Sidebar Styling */
+@media (min-width: 992px) {
+  .owner-main-content {
+    margin-left: 260px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .owner-sidebar {
+    transform: translateX(-100%);
+  }
+  .owner-sidebar.show {
+    transform: translateX(0);
+  }
+}
+
+.hover-sidebar {
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.hover-sidebar:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff !important;
+}
+
+/* Stepper Progress Bar */
+.status-stepper::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  right: 20px;
+  height: 2px;
+  background-color: #dee2e6;
+  z-index: 0;
+}
+
+.status-stepper.stepper-delivered::before {
+  background-color: #4CAF50 !important;
+}
+
+.stepper-step {
+  z-index: 1;
+}
+
+/* Custom Scrollbar for sleek UI */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1ede8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbb9a9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8917f;
+}

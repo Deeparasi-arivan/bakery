@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "6acda62c4c3b5f1e621c2e79",
+    "category": "Ingredients",
+    "amount": 3200,
+    "date": "2026-10-11T03:31:56.709Z",
+    "description": "Belgian cocoa powder, Madagascar vanilla pods, and organic butter 10kg",
+    "receiptImage": "",
+    "recordedBy": "6acda62c4c3b5f1e621c2e25",
+    "__v": 0,
+    "createdAt": "2026-10-13T03:31:56.710Z",
+    "updatedAt": "2026-10-13T03:31:56.710Z"
+  },
+  {
+    "_id": "6acda62c4c3b5f1e621c2e7a",
+    "category": "Packaging",
+    "amount": 1100,
+    "date": "2026-10-10T03:31:56.709Z",
+    "description": "Pastry boxes, golden cake boards, and ribbon rolls",
+    "receiptImage": "",
+    "recordedBy": "6acda62c4c3b5f1e621c2e25",
+    "__v": 0,
+    "createdAt": "2026-10-13T03:31:56.710Z",
+    "updatedAt": "2026-10-13T03:31:56.710Z"
+  },
+  {
+    "_id": "6acda62c4c3b5f1e621c2e7b",
+    "category": "Utilities",
+    "amount": 850,
+    "date": "2026-10-08T03:31:56.709Z",
+    "description": "Commercial oven cooking gas cylinder refills",
+    "receiptImage": "",
+    "recordedBy": "6acda62c4c3b5f1e621c2e25",
+    "__v": 0,
+    "createdAt": "2026-10-13T03:31:56.710Z",
+    "updatedAt": "2026-10-13T03:31:56.710Z"
+  },
+  {
+    "_id": "6acda62c4c3b5f1e621c2e7c",
+    "category": "Maintenance",
+    "amount": 500,
+    "date": "2026-10-07T03:31:56.709Z",
+    "description": "Electric planetary mixer servicing and blade sharpening",
+    "receiptImage": "",
+    "recordedBy": "6acda62c4c3b5f1e621c2e25",
+    "__v": 0,
+    "createdAt": "2026-10-13T03:31:56.710Z",
+    "updatedAt": "2026-10-13T03:31:56.710Z"
+  }
+]

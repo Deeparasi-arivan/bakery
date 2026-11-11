@@ -1,0 +1,171 @@
+/* ==========================================================================
+   SweetHome Bakery – Cart Page CSS
+   Luxury Dark Theme
+   ========================================================================== */
+
+.cart-page {
+  padding: 3rem 0;
+  min-height: 70vh;
+  background-color: var(--bg-primary);
+}
+
+/* Cart Table & Rows */
+.cart-table,
+.cart-page .table {
+  background-color: var(--bg-card) !important;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.cart-item,
+.cart-page .table tbody tr {
+  border-bottom: 1px solid var(--border-color) !important;
+  transition: background-color 0.2s ease;
+}
+
+.cart-item:hover,
+.cart-page .table tbody tr:hover {
+  background-color: var(--bg-hover) !important;
+}
+
+/* Product Thumbnail */
+.cart-item img,
+.cart-page .table tbody img {
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Product Name & Details */
+.cart-item h6,
+.cart-page .table tbody h6 {
+  font-family: var(--font-serif);
+  color: var(--cream) !important;
+  font-size: 1.05rem;
+}
+
+.cart-item h6 a,
+.cart-page .table tbody h6 a {
+  color: var(--cream) !important;
+  transition: color 0.2s ease;
+}
+
+.cart-item h6 a:hover,
+.cart-page .table tbody h6 a:hover {
+  color: var(--gold) !important;
+}
+
+/* Quantity Control */
+.quantity-control,
+.cart-page .table .border.rounded-pill.bg-light {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 50px;
+}
+
+.quantity-control button,
+.cart-page .table .btn-white {
+  background-color: var(--bg-card) !important;
+  color: var(--cream) !important;
+  border: 1px solid var(--border-color) !important;
+  transition: all 0.2s ease;
+}
+
+.quantity-control button:hover:not(:disabled),
+.cart-page .table .btn-white:hover:not(:disabled) {
+  background-color: var(--gold) !important;
+  color: var(--bg-primary) !important;
+  border-color: var(--gold) !important;
+}
+
+.quantity-control span,
+.cart-page .table span.fw-bold {
+  color: var(--cream) !important;
+}
+
+/* Subtotal & Price in Cart */
+.cart-page .table .text-bakery-accent {
+  color: var(--gold) !important;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+/* Remove Button */
+.cart-item-remove,
+.cart-page .table .btn-light.text-danger {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--danger) !important;
+  transition: all 0.2s ease;
+}
+
+.cart-item-remove:hover,
+.cart-page .table .btn-light.text-danger:hover {
+  background-color: rgba(239, 83, 80, 0.15) !important;
+  border-color: var(--danger) !important;
+  transform: scale(1.1);
+}
+
+/* Cart Order Summary Card */
+.cart-summary {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 20px;
+  padding: 1.75rem;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 90px;
+}
+
+.cart-summary h5 {
+  font-family: var(--font-serif);
+  color: var(--cream) !important;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.cart-summary .total-row,
+.cart-summary .border-top {
+  border-color: var(--border-color) !important;
+}
+
+.cart-summary .total-amount,
+.cart-summary .fs-4.text-bakery-accent {
+  color: var(--gold) !important;
+  font-weight: 700;
+  font-size: 1.6rem !important;
+}
+
+.cart-checkout-btn {
+  background-color: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--bg-primary) !important;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border-radius: 50px;
+  padding: 0.85rem;
+  box-shadow: 0 4px 20px rgba(233, 185, 110, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cart-checkout-btn:hover {
+  background-color: var(--gold-hover) !important;
+  box-shadow: var(--gold-glow-strong);
+  transform: translateY(-2px);
+}
+
+/* Empty Cart View */
+.cart-empty-card,
+.cart-page .bg-white.p-5.rounded-4 {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.cart-empty-icon {
+  background-color: var(--bg-secondary) !important;
+  border: 2px solid var(--border-color);
+  color: var(--gold) !important;
+}

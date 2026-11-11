@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "6acda62c4c3b5f1e621c2e25",
+    "name": "Deepa Dhiya",
+    "email": "owner@bakery.com",
+    "phone": "9042487448",
+    "password": "$2a$10$bqio31nqwxdgZXs2nheFn.h67/HIDOY1Mvpo7438PQSIZbFYjjNVS",
+    "role": "owner",
+    "createdAt": "2026-10-13T03:31:56.503Z",
+    "updatedAt": "2026-10-27T03:12:19.837Z",
+    "__v": 0,
+    "shop": "6acda62c4c3b5f1e621c2e33"
+  }
+]

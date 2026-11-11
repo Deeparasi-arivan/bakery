@@ -1,0 +1,142 @@
+/* ==========================================================================
+   SweetHome Bakery – Footer CSS
+   Luxury Dark Theme
+   ========================================================================== */
+
+.footer,
+footer {
+  background-color: var(--bg-secondary) !important;
+  border-top: 1px solid var(--border-color) !important;
+  color: var(--cream) !important;
+  padding-top: 4.5rem;
+  padding-bottom: 2.5rem;
+  margin-top: 5rem;
+}
+
+.footer-content {
+  margin-bottom: 2.5rem;
+}
+
+/* Brand Section in Footer */
+.footer .brand-logo,
+footer .rounded-circle.p-2.me-2 {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--gold) !important;
+  box-shadow: 0 0 15px rgba(233, 185, 110, 0.2);
+}
+
+.footer .brand-logo i,
+footer .bi-cake2-fill {
+  color: var(--gold) !important;
+}
+
+.footer .brand-name,
+footer span.font-serif.fs-4 {
+  font-family: var(--font-serif);
+  color: var(--gold) !important;
+  font-weight: 700;
+}
+
+.footer p,
+footer p.text-light {
+  color: var(--text-secondary) !important;
+  line-height: 1.7;
+}
+
+/* Section Headings */
+.footer h6,
+footer h6 {
+  font-family: var(--font-serif);
+  color: var(--gold) !important;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+/* Quick Links */
+.footer-links,
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+footer ul li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a,
+footer ul li a {
+  color: var(--cream) !important;
+  opacity: 0.85;
+  transition: all 0.25s ease;
+  display: inline-block;
+  font-size: 0.92rem;
+}
+
+.footer-links a:hover,
+footer ul li a:hover {
+  color: var(--gold) !important;
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+/* Contact Info Items */
+footer ul li.d-flex i {
+  color: var(--gold) !important;
+  font-size: 1.1rem;
+}
+
+footer ul li.d-flex span {
+  color: var(--text-secondary) !important;
+  font-size: 0.92rem;
+}
+
+/* Social Media Icons */
+.social-icons,
+footer .d-flex.gap-2 {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social-icons a,
+footer a.btn-outline-light {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--gold) !important;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.25s ease;
+}
+
+.social-icons a:hover,
+footer a.btn-outline-light:hover {
+  background-color: var(--gold) !important;
+  border-color: var(--gold) !important;
+  color: var(--bg-primary) !important;
+  box-shadow: var(--gold-glow);
+  transform: translateY(-2px);
+}
+
+/* Divider & Copyright Bar */
+footer hr.border-secondary {
+  border-color: var(--border-color) !important;
+  opacity: 1 !important;
+  margin: 2.5rem 0 1.5rem !important;
+}
+
+.copyright,
+footer .small.text-light {
+  color: var(--text-secondary) !important;
+  font-size: 0.85rem;
+}
+
+footer .d-flex.gap-3 span {
+  color: var(--text-secondary) !important;
+}

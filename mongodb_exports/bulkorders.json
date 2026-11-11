@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "6acda62c4c3b5f1e621c2e7e",
+    "customerName": "Karthik & Sneha",
+    "contactNumber": "9845012345",
+    "email": "sneha.wedding@gmail.com",
+    "eventType": "Wedding",
+    "eventDate": "2026-10-27T03:31:56.712Z",
+    "requiredItems": "3-tier Rustic White Chocolate Buttercream Wedding Cake with fresh lavender + 100 assorted dessert cupcakes",
+    "estimatedBudget": 8500,
+    "advanceAmount": 3000,
+    "status": "Confirmed",
+    "notes": "Delivery to Grand Palace Hall at 4:00 PM. Requires chiller transport.",
+    "__v": 0,
+    "createdAt": "2026-10-13T03:31:56.713Z",
+    "updatedAt": "2026-10-13T03:31:56.713Z"
+  },
+  {
+    "_id": "6acda62c4c3b5f1e621c2e7f",
+    "customerName": "Infosys Team Lead (Anita)",
+    "contactNumber": "9900112233",
+    "email": "anita.c@infosys.com",
+    "eventType": "Corporate",
+    "eventDate": "2026-10-18T03:31:56.712Z",
+    "requiredItems": "50 Boxed Chocolate Truffle Cupcakes with custom corporate edible wafer logo print",
+    "estimatedBudget": 4200,
+    "advanceAmount": 2000,
+    "status": "In Progress",
+    "notes": "Deliver to Electronic City campus Gate 2.",
+    "__v": 0,
+    "createdAt": "2026-10-13T03:31:56.713Z",
+    "updatedAt": "2026-10-13T03:31:56.713Z"
+  },
+  {
+    "_id": "6acda62c4c3b5f1e621c2e80",
+    "customerName": "Vikram Joshi",
+    "contactNumber": "9880099881",
+    "email": "vikram.j@gmail.com",
+    "eventType": "Birthday",
+    "eventDate": "2026-10-20T03:31:56.712Z",
+    "requiredItems": "2-tier Superhero Fondant Cake (Chocolate Truffle) 3kg for son 5th birthday",
+    "estimatedBudget": 3500,
+    "advanceAmount": 0,
+    "status": "Inquiry",
+    "notes": "Needs custom Spider-Man design. Waiting for confirmation.",
+    "__v": 0,
+    "createdAt": "2026-10-13T03:31:56.713Z",
+    "updatedAt": "2026-10-13T03:31:56.713Z"
+  }
+]

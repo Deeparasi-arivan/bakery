@@ -1,0 +1,206 @@
+/* ==========================================================================
+   SweetHome Bakery – Products & Product Cards CSS
+   Luxury Dark Theme
+   ========================================================================== */
+
+.products-section {
+  padding: 4rem 0;
+  background-color: var(--bg-primary);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Product Card */
+.product-card {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 18px !important;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 18px rgba(233, 185, 110, 0.15) !important;
+}
+
+/* Image Container & Hover Zoom */
+.product-image,
+.product-image-container {
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-secondary) !important;
+}
+
+.product-image img,
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.product-card:hover .product-img,
+.product-card:hover .product-image img {
+  transform: scale(1.08);
+}
+
+/* Stock & Chef Special Badges */
+.stock-badge,
+.product-card .badge {
+  font-size: 0.75rem;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.product-card .badge.bg-bakery-accent {
+  background-color: var(--gold) !important;
+  color: var(--bg-primary) !important;
+}
+
+.product-card .badge.bg-warning {
+  background-color: rgba(233, 185, 110, 0.2) !important;
+  color: var(--gold) !important;
+  border: 1px solid var(--gold);
+}
+
+.product-card .badge.bg-danger {
+  background-color: rgba(239, 83, 80, 0.2) !important;
+  color: var(--danger) !important;
+  border: 1px solid var(--danger);
+}
+
+/* Product Info */
+.product-info,
+.product-card .card-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: var(--bg-card) !important;
+}
+
+.product-category,
+.product-card .card-body .badge.bg-light {
+  background-color: var(--bg-hover) !important;
+  color: var(--gold) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+/* Rating */
+.product-rating,
+.product-card .text-warning {
+  color: var(--gold) !important;
+}
+
+.product-card .text-warning .fw-bold {
+  color: var(--cream) !important;
+}
+
+.product-card .text-warning .text-muted {
+  color: var(--text-secondary) !important;
+}
+
+/* Title & Description */
+.product-title,
+.product-card .card-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.product-title a,
+.product-card .card-title a {
+  color: var(--cream) !important;
+  transition: color 0.2s ease;
+}
+
+.product-title a:hover,
+.product-card .card-title a:hover {
+  color: var(--gold) !important;
+}
+
+.product-description,
+.product-card .card-text {
+  color: var(--text-secondary) !important;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+/* Price */
+.product-price,
+.product-card .text-bakery-accent {
+  color: var(--gold) !important;
+  font-family: var(--font-sans);
+  font-size: 1.25rem !important;
+  font-weight: 700;
+}
+
+/* Quantity Control in Product Card */
+.product-card .bg-light.rounded-pill {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.product-card .btn-white {
+  background-color: var(--bg-card) !important;
+  color: var(--cream) !important;
+  border: 1px solid var(--border-color) !important;
+  transition: all 0.2s ease;
+}
+
+.product-card .btn-white:hover:not(:disabled) {
+  background-color: var(--gold) !important;
+  color: var(--bg-primary) !important;
+  border-color: var(--gold) !important;
+}
+
+/* Action Buttons */
+.add-to-cart-btn,
+.product-card .btn-outline-bakery {
+  background-color: transparent !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--gold) !important;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.add-to-cart-btn:hover:not(:disabled),
+.product-card .btn-outline-bakery:hover:not(:disabled) {
+  background-color: var(--gold) !important;
+  color: var(--bg-primary) !important;
+  box-shadow: 0 4px 15px rgba(233, 185, 110, 0.25);
+  transform: translateY(-1px);
+}
+
+.product-card .btn-bakery-accent {
+  background-color: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--bg-primary) !important;
+  border-radius: 50px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(233, 185, 110, 0.2);
+  transition: all 0.25s ease;
+}
+
+.product-card .btn-bakery-accent:hover:not(:disabled) {
+  background-color: var(--gold-hover) !important;
+  border-color: var(--gold-hover) !important;
+  color: var(--bg-primary) !important;
+  box-shadow: var(--gold-glow);
+  transform: translateY(-1px);
+}

@@ -1,0 +1,175 @@
+/* ==========================================================================
+   SweetHome Bakery – Checkout Page CSS
+   Luxury Dark Theme
+   ========================================================================== */
+
+.checkout-page {
+  padding: 3rem 0;
+  min-height: 80vh;
+  background-color: var(--bg-primary);
+}
+
+/* Section Cards on Checkout */
+.checkout-card,
+.checkout-page .card {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 18px !important;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.5rem;
+}
+
+.checkout-page .card-header {
+  background-color: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  font-family: var(--font-serif);
+  color: var(--gold) !important;
+}
+
+/* Delivery Address Selection Cards */
+.address-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.address-card:hover {
+  border-color: rgba(233, 185, 110, 0.5);
+  background-color: var(--bg-hover);
+}
+
+.address-card.selected,
+.address-card.active {
+  border-color: var(--gold) !important;
+  background-color: rgba(92, 50, 30, 0.2) !important;
+  box-shadow: 0 0 16px rgba(233, 185, 110, 0.2);
+}
+
+.address-card .address-name {
+  color: var(--cream);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.address-card .address-details {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  margin-top: 0.35rem;
+}
+
+/* Payment Option Cards */
+.payment-option {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.payment-option:hover {
+  border-color: rgba(233, 185, 110, 0.5);
+  background-color: var(--bg-hover);
+}
+
+.payment-option.selected,
+.payment-option.active {
+  border-color: var(--gold) !important;
+  background-color: rgba(92, 50, 30, 0.25) !important;
+  box-shadow: 0 0 18px rgba(233, 185, 110, 0.2);
+}
+
+.payment-option .payment-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 1.35rem;
+}
+
+.payment-option .payment-info h6 {
+  margin: 0;
+  color: var(--cream);
+  font-weight: 600;
+}
+
+.payment-option .payment-info small {
+  color: var(--text-secondary);
+}
+
+/* Order Summary (Sticky Sidebar) */
+.order-summary {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 20px;
+  padding: 1.75rem;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 90px;
+}
+
+.order-summary h5 {
+  font-family: var(--font-serif);
+  color: var(--cream) !important;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.order-summary .summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.order-summary .summary-item.total {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  color: var(--cream);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.order-summary .total-price {
+  color: var(--gold) !important;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* Place Order Button */
+.place-order-btn {
+  background-color: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--bg-primary) !important;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  padding: 0.9rem;
+  width: 100%;
+  box-shadow: 0 4px 25px rgba(233, 185, 110, 0.35);
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.place-order-btn:hover:not(:disabled) {
+  background-color: var(--gold-hover) !important;
+  box-shadow: var(--gold-glow-strong);
+  transform: translateY(-2px);
+}

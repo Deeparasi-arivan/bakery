@@ -1,7 +1,11 @@
 import axios from 'axios';
 
+// Backend URL configured for Render deployment with local fallback
+const rawBaseUrl = import.meta.env.VITE_API_URL || 'https://bakery-vjhc.onrender.com';
+const API_BASE_URL = rawBaseUrl.replace(/\/+$/, '');
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: `${API_BASE_URL}/api`,
   headers: {
     'Content-Type': 'application/json'
   }

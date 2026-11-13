@@ -37,8 +37,10 @@ export const getImageUrl = (imagePath) => {
   if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
     return imagePath;
   }
-  // Server uploads
-  return `http://localhost:5000${imagePath}`;
+  // Server uploads (Render backend or configured API URL)
+  const rawBaseUrl = import.meta.env.VITE_API_URL || 'https://bakery-vjhc.onrender.com';
+  const baseUrl = rawBaseUrl.replace(/\/+$/, '');
+  return `${baseUrl}${imagePath.startsWith('/') ? '' : '/'}${imagePath}`;
 };
 
 /**
